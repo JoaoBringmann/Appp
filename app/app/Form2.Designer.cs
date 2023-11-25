@@ -44,6 +44,7 @@
             this.label1.Size = new System.Drawing.Size(37, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Login";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // frmlogin
             // 
@@ -63,6 +64,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label2
             // 
@@ -79,6 +81,7 @@
             this.txt_logi.Name = "txt_logi";
             this.txt_logi.Size = new System.Drawing.Size(100, 23);
             this.txt_logi.TabIndex = 4;
+            this.txt_logi.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txt_logi_MaskInputRejected);
             // 
             // txt_senha
             // 
@@ -101,7 +104,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frm_login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "Login";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

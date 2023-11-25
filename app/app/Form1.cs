@@ -16,17 +16,23 @@ namespace app
         {
             if(txt_principal.Text=="")
             {
-                MessageBox.Show("Campo de login está vazio");
+                MessageBox.Show("Campo de Nome está vazio");
                 txt_principal.Focus();
             }
             if (txt_password.Text=="")
             {
-                MessageBox.Show("Campo password está vazio");
+                MessageBox.Show("Campo Email está vazio");
+                txt_password.Focus();
+            }
+            if (txt_rg.Text == "") 
+            {
+                MessageBox.Show("Campo Rg está vazio");
                 txt_password.Focus();
             }
             else
-                
-            MessageBox.Show("Ola usuário," + txt_principal.Text + "\n sua senha é:" + txt_password.Text);
+            
+
+                MessageBox.Show("Ola Aluno:" + txt_principal.Text);
         }
 
         private void txt_password_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
@@ -75,6 +81,16 @@ namespace app
         }
 
         private void frm_Principal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void datanascimento_ValueChanged(object sender, EventArgs e)
         {
 
         }

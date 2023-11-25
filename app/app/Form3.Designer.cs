@@ -31,8 +31,11 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sistemaDeInformaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.engenhariaDeSoftwareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroProfessorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -59,14 +62,33 @@
             // 
             // arquivoToolStripMenuItem
             // 
+            this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sistemaDeInformaçãoToolStripMenuItem,
+            this.engenhariaDeSoftwareToolStripMenuItem});
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
-            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.arquivoToolStripMenuItem.Text = "Arquivo";
+            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.arquivoToolStripMenuItem.Text = "Cursos";
+            this.arquivoToolStripMenuItem.Click += new System.EventHandler(this.arquivoToolStripMenuItem_Click);
+            // 
+            // sistemaDeInformaçãoToolStripMenuItem
+            // 
+            this.sistemaDeInformaçãoToolStripMenuItem.Name = "sistemaDeInformaçãoToolStripMenuItem";
+            this.sistemaDeInformaçãoToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.sistemaDeInformaçãoToolStripMenuItem.Text = "Sistema de informação";
+            this.sistemaDeInformaçãoToolStripMenuItem.Click += new System.EventHandler(this.sistemaDeInformaçãoToolStripMenuItem_Click);
+            // 
+            // engenhariaDeSoftwareToolStripMenuItem
+            // 
+            this.engenhariaDeSoftwareToolStripMenuItem.Name = "engenhariaDeSoftwareToolStripMenuItem";
+            this.engenhariaDeSoftwareToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.engenhariaDeSoftwareToolStripMenuItem.Text = "Engenharia de Software";
+            this.engenhariaDeSoftwareToolStripMenuItem.Click += new System.EventHandler(this.engenhariaDeSoftwareToolStripMenuItem_Click);
             // 
             // usuarioToolStripMenuItem
             // 
             this.usuarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastroToolStripMenuItem});
+            this.cadastroToolStripMenuItem,
+            this.cadastroProfessorToolStripMenuItem});
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
             this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.usuarioToolStripMenuItem.Text = "Usuario";
@@ -74,9 +96,16 @@
             // cadastroToolStripMenuItem
             // 
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
-            this.cadastroToolStripMenuItem.Text = "Cadastro";
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cadastroToolStripMenuItem.Text = "Cadastro Aluno";
             this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
+            // 
+            // cadastroProfessorToolStripMenuItem
+            // 
+            this.cadastroProfessorToolStripMenuItem.Name = "cadastroProfessorToolStripMenuItem";
+            this.cadastroProfessorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cadastroProfessorToolStripMenuItem.Text = "Cadastro Professor";
+            this.cadastroProfessorToolStripMenuItem.Click += new System.EventHandler(this.cadastroProfessorToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -94,7 +123,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmcad";
-            this.Text = "Form3";
+            this.Text = "Informação";
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.ResumeLayout(false);
@@ -110,5 +139,8 @@
         private ToolStripMenuItem usuarioToolStripMenuItem;
         private ToolStripMenuItem cadastroToolStripMenuItem;
         private ToolStripMenuItem helpToolStripMenuItem;
+        private ToolStripMenuItem sistemaDeInformaçãoToolStripMenuItem;
+        private ToolStripMenuItem engenhariaDeSoftwareToolStripMenuItem;
+        private ToolStripMenuItem cadastroProfessorToolStripMenuItem;
     }
 }

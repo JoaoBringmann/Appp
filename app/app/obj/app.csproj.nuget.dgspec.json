@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aluno\\source\\repos\\app\\app\\app.csproj": {}
+    "C:\\Users\\aluno\\Documents\\GitHub\\Appp\\app\\app\\app.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aluno\\source\\repos\\app\\app\\app.csproj": {
+    "C:\\Users\\aluno\\Documents\\GitHub\\Appp\\app\\app\\app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aluno\\source\\repos\\app\\app\\app.csproj",
+        "projectUniqueName": "C:\\Users\\aluno\\Documents\\GitHub\\Appp\\app\\app\\app.csproj",
         "projectName": "app",
-        "projectPath": "C:\\Users\\aluno\\source\\repos\\app\\app\\app.csproj",
+        "projectPath": "C:\\Users\\aluno\\Documents\\GitHub\\Appp\\app\\app\\app.csproj",
         "packagesPath": "C:\\Users\\aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aluno\\source\\repos\\app\\app\\obj\\",
+        "outputPath": "C:\\Users\\aluno\\Documents\\GitHub\\Appp\\app\\app\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

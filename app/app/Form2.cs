@@ -24,7 +24,7 @@ namespace app
 
         private void Logar_Click(object sender, EventArgs e)
         {
-            if (txt_logi.Text == "Ciffoni" && txt_senha.Text == "Aluno123")
+            if (txt_logi.Text == "login" && txt_senha.Text == "aluno123")
             {
                 frmcad principal = new frmcad();
                 principal.Show();
@@ -33,6 +33,22 @@ namespace app
             {
                 MessageBox.Show("Usuário ou senha invalido");
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_logi_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            txt_logi.Clear();
+            txt_senha.Clear();
         }
     }
 }

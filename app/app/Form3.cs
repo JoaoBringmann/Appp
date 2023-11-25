@@ -23,5 +23,32 @@ namespace app
             usuario.MdiParent = this;//informar janela filha
             usuario.Show();
         }
+
+        private void arquivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sistemaDeInformaçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_SI sistema = new frm_SI();
+            sistema.MdiParent = this;//informar janela filha
+            sistema.Show();
+
+        }
+
+        private void engenhariaDeSoftwareToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_es engenharia = new frm_es();
+            engenharia.MdiParent = this;//informar janela filha
+            engenharia.Show();
+        }
+
+        private void cadastroProfessorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            x usuariop = new x();
+            usuariop.MdiParent = this;//informar janela filha
+            usuariop.Show();
+        }
     }
 }
