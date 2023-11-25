@@ -21,5 +21,24 @@ namespace app
         {
 
         }
+
+        private void btn_cursoe_Click(object sender, EventArgs e)
+        {
+            if (txt_ano.Text == "")
+            {
+                MessageBox.Show("Campo Ano está vazio");
+                txt_ano.Focus();
+            }
+            if (txt_turma.Text == "")
+            {
+                MessageBox.Show("Campo Turma está vazio");
+                txt_turma.Focus();
+            }
+            else
+            {
+
+                MessageBox.Show("Sua turma do curso de Engenharia de Software é:" + txt_turma.Text + "\n Do ano:" + txt_ano.Text);
+            }
+        }
     }
 }

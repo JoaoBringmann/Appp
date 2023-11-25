@@ -36,7 +36,6 @@
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroProfessorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,8 +51,7 @@
             // 
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arquivoToolStripMenuItem,
-            this.usuarioToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.usuarioToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(800, 24);
@@ -107,12 +105,6 @@
             this.cadastroProfessorToolStripMenuItem.Text = "Cadastro Professor";
             this.cadastroProfessorToolStripMenuItem.Click += new System.EventHandler(this.cadastroProfessorToolStripMenuItem_Click);
             // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
             // frmcad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -138,7 +130,6 @@
         private ToolStripMenuItem arquivoToolStripMenuItem;
         private ToolStripMenuItem usuarioToolStripMenuItem;
         private ToolStripMenuItem cadastroToolStripMenuItem;
-        private ToolStripMenuItem helpToolStripMenuItem;
         private ToolStripMenuItem sistemaDeInformaçãoToolStripMenuItem;
         private ToolStripMenuItem engenhariaDeSoftwareToolStripMenuItem;
         private ToolStripMenuItem cadastroProfessorToolStripMenuItem;
